@@ -29,9 +29,9 @@ public class DataTypes
 	public boolean checkOtherTypes()
 	{
 		System.out.println("checkOtherTypes()");
-		boolean bPass = true;
-		char cA = 'A';
-		String sGreating = "Welcome to java practice repo";
+		boolean bPass = true; 	// 1 bit
+		char cA = 'A'; 	// 2 bytes
+		String sGreating = "Welcome to java practice repo"; 	// not a premitive data type. Cannot define the size of String type
 
 		System.out.println("boolean value: " + bPass);
 		System.out.println("char value: " + cA);
@@ -50,6 +50,81 @@ public class DataTypes
 		System.out.println("Scientific float: " + fPIinto10000);
 		System.out.println("Scientific double: " + dNumberOfStudents);
 		System.out.println("Scientific double: " + dHeightOfAStudents + " cm");
+
+		return true;
+	}
+
+	// Java Type Casting
+	// Type casting is when you assign a value of one primitive data type to another type.
+	// In Java, there are two types of casting:
+
+	// 	- Widening Casting (automatically) - converting a smaller type to a larger type size
+	// 	- byte -> short -> char -> int -> long -> float -> double
+		
+	// 	- Narrowing Casting (manually) - converting a larger type to a smaller size type
+	// 	- double -> float -> long -> int -> char -> short -> byte
+	public boolean javaTypeCastingExample()
+	{
+		// Widening Casting int -> double
+		int iA = 125;
+		double dB = iA;
+		System.out.println("int iA: " + iA);
+		System.out.println("double dB: " + dB);
+
+		// Narrowing  Casting double -> int
+		double dC = 125.235d;
+		int iD = (int)dC;
+		System.out.println("double dC: " + dC);
+		System.out.println("int iD: " + iD);
+
+		return true;
+	}
+
+	// Java Strings
+	public boolean javaStringExample()
+	{
+		// String Length
+		String sName = "Udara Abeyrathne";
+		System.out.println("sName length: " + sName.length());
+
+		// toUpperCase() and toLowerCase()
+		System.out.println("sName toUpperCase: " + sName.toUpperCase());
+		System.out.println("sName toLowerCase: " + sName.toLowerCase());
+
+		// Finding a Character in a String
+		System.out.println("sName place \'Abe\'(6): " + sName.indexOf("Abe"));
+
+		// String Concatenation
+		String sIntro = "My name is";
+		String sDescription = sIntro + " " + sName;
+		System.out.println(sDescription);
+
+		// Special Characters
+		String sSpecialCharAdded = sIntro + " \'" + sName + "\'";
+		System.out.println(sSpecialCharAdded);
+
+		// Adding Numbers and Strings
+		String sA = "Apple";
+		String sB = "Mango";
+		int iA = 12;
+		int iB = 4;
+
+		// type 1 - String + int + String + int
+		String sType1 = sA + iA + sB + iB;
+
+		// type 2 - int + int + String + String
+		String sType2 = iA + iB + sA + sB;
+
+		// type 3 - String + String + int + int
+		String sType3 = sA + sB + iA + iB;
+
+		// type 4 - String + int + int + String
+		String sType4 = sA + iA + iB + sB;
+
+		System.out.println("String sType1 = sA + iA + sB + iB: " + sType1);
+		System.out.println("String sType2 = iA + iB + sA + sB: " + sType2);
+		System.out.println("String sType3 = sA + sB + iA + iB: " + sType3);
+		System.out.println("String sType4 = sA + iA + iB + sB: " + sType4);
 
 		return true;
 	}

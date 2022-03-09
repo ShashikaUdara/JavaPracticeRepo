@@ -9,5 +9,7 @@ public class Main
 		dt.checkFloatingPointTypes();
 		dt.checkOtherTypes();
 		dt.checkScientificNumbers();
+		dt.javaTypeCastingExample();
+		dt.javaStringExample();
 	}
 }
