@@ -128,4 +128,50 @@ public class DataTypes
 
 		return true;
 	}
+
+	// Java Math
+	public boolean javaMathExample()
+	{
+		float iA = 6.25f;
+		float iB = 2.25f;
+		// Get Maximum out of two numbers
+		System.out.println("Math.max: " + Math.max(iA, iB));
+
+		// Get Minimum out of two numbers
+		System.out.println("Math.min: " + Math.min(iA, iB));
+
+		// Get Square root of a number
+		System.out.println("Math.sqrt of iA: " + Math.sqrt(iA));
+		System.out.println("Math.sqrt of iB: " + Math.sqrt(iB));
+
+		// Get Absolute (positive) value of a number
+		System.out.println("Math.abs of iA: " + Math.abs(iA));
+		System.out.println("Math.abs of iB: " + Math.abs(-1*iB));
+
+		// Generate Random Numbers
+		System.out.println("Math.random(): " + Math.random());
+
+		return true;
+	}
+
+	// Java Method Overloading
+	// multiple methods can have the same name with different parameters
+	public int functionOverrideExample()
+	{
+		System.out.println("functionOverrideExamplr()");
+		return 0;
+	}
+
+	public int functionOverrideExample(int iAge)
+	{
+		System.out.println("functionOverrideExamplr(int iAge): " + iAge);
+		return 0;
+	}
+
+	public int functionOverrideExample(int iAge, String sName)
+	{
+		System.out.println("functionOverrideExamplr(int iAge, String sName): " + iAge + " : " + sName);
+		return 0;
+	}
+
 }

@@ -11,5 +11,9 @@ public class Main
 		dt.checkScientificNumbers();
 		dt.javaTypeCastingExample();
 		dt.javaStringExample();
+		dt.javaMathExample();
+		dt.functionOverrideExample();
+		dt.functionOverrideExample(30);
+		dt.functionOverrideExample(30, "Udara");
 	}
 }
