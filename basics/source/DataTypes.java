@@ -1,5 +1,7 @@
 public class DataTypes
 {
+	int total = 0;
+
 	public boolean checkIntegerTypes()
 	{
 		System.out.println("checkIntegerTypes()");
@@ -174,4 +176,18 @@ public class DataTypes
 		return 0;
 	}
 
+	// java recursion
+	// following example is going to keep add
+	public int sum(int number)
+	{
+		if(number > 0)
+		{
+			// total = number + sum(number--);
+			return number + sum(number-1);
+		}
+		else
+		{
+			return 0;
+		}
+	}
 }

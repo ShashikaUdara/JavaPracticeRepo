@@ -15,5 +15,6 @@ public class Main
 		dt.functionOverrideExample();
 		dt.functionOverrideExample(30);
 		dt.functionOverrideExample(30, "Udara");
+		System.out.println(dt.sum(5));
 	}
 }
