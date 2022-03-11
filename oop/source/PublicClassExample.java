@@ -1,5 +1,7 @@
 public class PublicClassExample
 {
+	private String sPrivateVariable = "This is private";
+	protected String sProtectedVariable = "This is protected";
 	public PublicClassExample()
 	{
 		System.out.println("public Constructor : PublicClassExample()");
@@ -46,5 +48,10 @@ public class PublicClassExample
 
 		pceProtected.sampleMethodPrivate("Protected obj from same class");
 		pceProtected.sampleMethodProtected("Protected obj from same class");
+
+		System.out.println("pcePrivate.sPrivateVariable: " + pcePrivate.sPrivateVariable);
+		System.out.println("pcePrivate.sProtectedVariable: " + pcePrivate.sProtectedVariable);
+		System.out.println("pceProtected.sPrivateVariable: " + pceProtected.sPrivateVariable);
+		System.out.println("pceProtected.sProtectedVariable: " + pceProtected.sProtectedVariable);
 	}
 }

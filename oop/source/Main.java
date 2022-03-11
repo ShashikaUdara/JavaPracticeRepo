@@ -36,5 +36,10 @@ public class Main
 
 		// pceMainProtected.sampleMethodPrivate("Protected obj from main");
 		pceMainProtected.sampleMethodProtected("Protected obj from main");
+
+		// System.out.println("pceMainPrivate.sPrivateVariable: " + pceMainPrivate.sPrivateVariable);
+		// System.out.println("pceMainPrivate.sProtectedVariable: " + pceMainPrivate.sProtectedVariable);
+		// System.out.println("pceMainProtected.sPrivateVariable: " + pceMainProtected.sPrivateVariable);
+		System.out.println("pceMainProtected.sProtectedVariable: " + pceMainProtected.sProtectedVariable);
 	}
 }
