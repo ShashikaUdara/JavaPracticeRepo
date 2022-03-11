@@ -16,5 +16,9 @@ public class Main
 		dt.functionOverrideExample(30);
 		dt.functionOverrideExample(30, "Udara");
 		System.out.println(dt.sum(5));
+		int[] iTempArr = dt.fibonacci(20);
+
+		for(int x=0; x<iTempArr.length - 1; x++)
+			System.out.println(x+1 + " : " + iTempArr[x]);
 	}
 }

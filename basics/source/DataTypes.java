@@ -190,4 +190,30 @@ public class DataTypes
 			return 0;
 		}
 	}
+
+	public int[] fibonacci(int range)
+	{
+		int iLast = 1;
+		int iNLast = 0;
+		int iTemp = 0;
+		int fiboArr[] = new int[range+1];
+
+		for(int i=0; i<range; i++)
+		{
+			if(i == 0 || i == 1)
+			{
+				System.out.print(i + ", ");
+				fiboArr[i] = i;
+				continue;
+			}
+			System.out.print(iNLast + iLast + ", ");
+			iTemp = iNLast + iLast;
+			fiboArr[i] = iTemp;
+			iNLast = iLast;
+			iLast = iTemp;
+		}
+
+		System.out.println("");
+		return fiboArr;
+	}
 }
