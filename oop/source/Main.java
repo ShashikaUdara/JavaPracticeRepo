@@ -42,7 +42,12 @@ public class Main
 		// System.out.println("pceMainProtected.sPrivateVariable: " + pceMainProtected.sPrivateVariable);
 		System.out.println("pceMainProtected.sProtectedVariable: " + pceMainProtected.sProtectedVariable);
 
-
 		dceMain.finalExample();
+
+		// Encapsulation examples here
+		EncapsulationClass ecMain = new EncapsulationClass("This is Main");
+		ecMain.setName("Udara Abeyrathne");
+		System.out.println(ecMain.getName());
+
 	}
 }

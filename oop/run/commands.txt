@@ -1,0 +1,5 @@
+compile command
+javac -d ../class Main.java JavaClassesAndObjectsBasics.java PublicClassExample.java DefaultClassExample.java
+
+run command
+java -cp ../class Main
