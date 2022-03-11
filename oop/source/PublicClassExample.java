@@ -54,4 +54,4 @@ public class PublicClassExample
 		System.out.println("pceProtected.sPrivateVariable: " + pceProtected.sPrivateVariable);
 		System.out.println("pceProtected.sProtectedVariable: " + pceProtected.sProtectedVariable);
 	}
-}
+} 

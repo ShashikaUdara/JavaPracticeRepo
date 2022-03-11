@@ -41,5 +41,8 @@ public class Main
 		// System.out.println("pceMainPrivate.sProtectedVariable: " + pceMainPrivate.sProtectedVariable);
 		// System.out.println("pceMainProtected.sPrivateVariable: " + pceMainProtected.sPrivateVariable);
 		System.out.println("pceMainProtected.sProtectedVariable: " + pceMainProtected.sProtectedVariable);
+
+
+		dceMain.finalExample();
 	}
 }
