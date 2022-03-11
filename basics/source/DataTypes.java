@@ -1,6 +1,14 @@
+import java.util.ArrayList;
+
 public class DataTypes
 {
 	int total = 0;
+	int ipCount = 0;
+	int iPLast = 1;
+	int iPNLast = 0;
+	int ipTemp = 0;
+
+	ArrayList<Integer> fiboList = new ArrayList<Integer>();
 
 	public boolean checkIntegerTypes()
 	{
@@ -215,5 +223,33 @@ public class DataTypes
 
 		System.out.println("");
 		return fiboArr;
+	}
+
+	// creating the recursive febonacci method
+	public ArrayList<Integer> fibonacciRecursive(int range)
+	{
+		if(range > 0)
+		{
+			if(ipCount == 0)
+			{
+				ipCount = range;
+			}
+
+			if(ipCount - range == 0 || ipCount - range == 1)
+			{
+				fiboList.add(ipCount - range);
+			}
+			else
+			{
+				System.out.print(iPNLast + iPLast + ", ");
+				ipTemp = iPNLast + iPLast;
+				fiboList.add(ipTemp);
+				iPNLast = iPLast;
+				iPLast = ipTemp;
+			}
+			fibonacciRecursive(range-1);
+		}
+		
+		return fiboList;
 	}
 }

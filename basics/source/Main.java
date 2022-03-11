@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main
 {
 	public static void main(String []args)
@@ -20,5 +22,10 @@ public class Main
 
 		for(int x=0; x<iTempArr.length - 1; x++)
 			System.out.println(x+1 + " : " + iTempArr[x]);
+
+		ArrayList<Integer> ialTempArr = new ArrayList<Integer>(dt.fibonacciRecursive(50));
+
+		for(int x=0; x<ialTempArr.size(); x++)
+			System.out.println(x+1 + " : " + ialTempArr.get(x));
 	}
 }
