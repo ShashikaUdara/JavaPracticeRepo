@@ -21,7 +21,20 @@ public class Main
 		JavaClassesAndObjectsBasics objPublicAndDefault = new JavaClassesAndObjectsBasics();
 		objPublicAndDefault.accessPublicClass();
 
+		// accessing default class methods in the main class
 		DefaultClassExample dceMain = new DefaultClassExample();
 		dceMain.sampleMethodDefault("Main");
+
+		// this is not valied - private cannot be accessed
+		// PublicClassExample pceMainPrivate = new PublicClassExample("Private String from main");
+
+		// protected constructors can be accessed by the external classes in the same package
+		PublicClassExample pceMainProtected = new PublicClassExample(28, "Protected String from main");
+
+		// pceMainPrivate.sampleMethodPrivate("Private obj from main");
+		// pceMainPrivate.sampleMethodProtected("Private obj from main");
+
+		// pceMainProtected.sampleMethodPrivate("Protected obj from main");
+		pceMainProtected.sampleMethodProtected("Protected obj from main");
 	}
 }
