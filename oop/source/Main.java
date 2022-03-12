@@ -46,7 +46,7 @@ public class Main
 
 		// Encapsulation examples here
 		EncapsulationClass ecMain = new EncapsulationClass("This is Main");
-		ecMain.setName("Udara Abeyrathne");
+		ecMain.setName();
 		System.out.println(ecMain.getName());
 
 	}
