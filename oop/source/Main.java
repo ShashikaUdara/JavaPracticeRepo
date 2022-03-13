@@ -49,5 +49,16 @@ public class Main
 		ecMain.setName();
 		System.out.println(ecMain.getName());
 
+		// Java Inheritance (Subclass and Superclass)
+		// creating carclass object
+		CarClass car = new CarClass();
+
+		// accessing own methods
+		car.doDragging();
+
+		// accessing parent methods
+		car.honk();
+		car.move();
+		car.putLights();
 	}
 }
