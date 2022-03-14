@@ -60,5 +60,23 @@ public class Main
 		car.honk();
 		car.move();
 		car.putLights();
+
+		// CarClass carV = new VehicleClass();
+		// accessing own methods
+		// carV.doDragging();
+
+		// accessing parent methods
+		// carV.honk();
+		// carV.move();
+		// carV.putLights();
+
+		VehicleClass vehicle = new VehicleClass();
+		// accessing own methods
+		// vehicle.doDragging();
+
+		// accessing parent methods
+		vehicle.honk();
+		vehicle.move();
+		vehicle.putLights();
 	}
 }
