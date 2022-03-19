@@ -45,9 +45,9 @@ public class Main
 		dceMain.finalExample();
 
 		// Encapsulation examples here
-		EncapsulationClass ecMain = new EncapsulationClass("This is Main");
-		ecMain.setName();
-		System.out.println(ecMain.getName());
+		// EncapsulationClass ecMain = new EncapsulationClass("This is Main");
+		// ecMain.setName();
+		// System.out.println(ecMain.getName());
 
 		// Java Inheritance (Subclass and Superclass)
 		// creating carclass object
@@ -70,6 +70,7 @@ public class Main
 		// carV.move();
 		// carV.putLights();
 
+		// Java Polymorphism
 		VehicleClass vehicle = new VehicleClass();
 		// accessing own methods
 		// vehicle.doDragging();
@@ -86,6 +87,16 @@ public class Main
 		objCarV.putLights();
 		objCarV.doDragging();
 
-		// Java Polymorphism
+		// Inner class example
+		OuterClass oc = new OuterClass();
+		OuterClass.InnerClass ic = oc.new InnerClass();
+
+		oc.outerMethod();
+		ic.innerMethod();
+		// oc.InnerClass.innerMethod(); // this cannot be done - non-static method innerMethod() cannot be referenced from a static context
+
+		// private inner classed are inaccessible from outside the outer calss
+		// OuterClass.PrivateInnerClass pc = oc.new PrivateInnerClass(); // OuterClass.PrivateInnerClass has private access in OuterClass
+		// pc.privateInnerMethod(); 
 	}
 }
