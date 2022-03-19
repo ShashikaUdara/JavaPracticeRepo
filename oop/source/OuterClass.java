@@ -41,4 +41,23 @@ public class OuterClass
 			System.out.println("privateInnerMethod()");
 		}
 	}
+
+	// Static Inner Class - can access without creating object
+	public static class StaticInnerClass
+	{
+		public StaticInnerClass()
+		{
+			System.out.println(" Static Inner class constructor");
+		}
+
+		public static void staticClass_StaticInnerMethod()
+		{
+			System.out.println("staticClass_StaticInnerMethod()");
+		}
+
+		public static void staticClass_NonStaticInnerMethod()
+		{
+			System.out.println("staticClass_NonStaticInnerMethod()");
+		}
+	}
 }

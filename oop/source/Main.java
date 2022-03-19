@@ -98,5 +98,12 @@ public class Main
 		// private inner classed are inaccessible from outside the outer calss
 		// OuterClass.PrivateInnerClass pc = oc.new PrivateInnerClass(); // OuterClass.PrivateInnerClass has private access in OuterClass
 		// pc.privateInnerMethod(); 
+
+		// accessing the static inner classes statice inner method
+		OuterClass.StaticInnerClass.staticClass_StaticInnerMethod();
+
+		// accessing the static inner classes statice inner method
+		OuterClass.StaticInnerClass isc = new OuterClass.StaticInnerClass();
+		isc.staticClass_NonStaticInnerMethod();
 	}
 }
