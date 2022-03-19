@@ -105,5 +105,19 @@ public class Main
 		// accessing the static inner classes statice inner method
 		OuterClass.StaticInnerClass isc = new OuterClass.StaticInnerClass();
 		isc.staticClass_NonStaticInnerMethod();
+
+
+		// Access Outer Class From Inner Class
+		// One advantage of inner classes, is that they can access attributes and methods of the outer class
+		OuterClass outerObj = new OuterClass();
+		OuterClass.InnerClass innerObj1 = outerObj.new InnerClass();
+		innerObj1.accessOuterProperties();
+
+		// OuterClass.PrivateInnerClass innerObj2 = outerObj.new PrivateInnerClass(); // this is a private inner class, this cannot be access in the outside of the outer class that holds the private inner class
+		// innerObj2.accessOuterProperties();
+
+		OuterClass.StaticInnerClass innerObj3 = new OuterClass.StaticInnerClass();
+		innerObj3.accessOuterProperties();
+		OuterClass.StaticInnerClass.staticAccessOuterProperties();
 	}
 }
