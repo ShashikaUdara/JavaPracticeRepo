@@ -19,4 +19,9 @@ public class VehicleClass
 	{
 		System.out.println("VehicleClass - Putting Lights");
 	}
+
+	public void doDragging()
+	{
+		System.out.println("Can't all vehicles drag");
+	}
 }

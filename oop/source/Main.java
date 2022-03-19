@@ -78,5 +78,14 @@ public class Main
 		vehicle.honk();
 		vehicle.move();
 		vehicle.putLights();
+		vehicle.doDragging();
+
+		VehicleClass objCarV = new CarClass();
+		objCarV.honk();
+		objCarV.move();
+		objCarV.putLights();
+		objCarV.doDragging();
+
+		// Java Polymorphism
 	}
 }

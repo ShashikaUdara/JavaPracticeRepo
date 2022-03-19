@@ -1,5 +1,5 @@
 compile command
-javac -d ../class Main.java JavaClassesAndObjectsBasics.java PublicClassExample.java DefaultClassExample.java
+javac -d ../class Main.java CarClass.java DefaultClassExample.java EncapsulationClass.java JavaClassesAndObjectsBasics.java PublicClassExample.java VehicleClass.java
 
 run command
 java -cp ../class Main
