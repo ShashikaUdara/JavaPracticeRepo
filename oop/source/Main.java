@@ -119,5 +119,19 @@ public class Main
 		OuterClass.StaticInnerClass innerObj3 = new OuterClass.StaticInnerClass();
 		innerObj3.accessOuterProperties();
 		OuterClass.StaticInnerClass.staticAccessOuterProperties();
+
+		// Java Abstraction
+		// Abstract Classes and Methods
+		// creating object to access the abstract class
+		// AbstractClassExample absCls = new AbstractClassExample(); // this should be an error
+				// D:\personal\JavaPracticeRepo\oop\source>javac -d ../class Main.java
+		// Main.java:126: error: AbstractClassExample is abstract; cannot be instantiated
+		                // AbstractClassExample absCls = new AbstractClassExample(); // this should be an error
+
+		// try accessing through the child class
+		ChildClass cc = new ChildClass();
+		cc.abstractMethod(); // overiddn by the chiled class
+		cc.simpleChildMethod(); // from the child class
+		cc.simpleNonAbstractMethod(); // from parent abstract class
 	}
 }
