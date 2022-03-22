@@ -133,5 +133,10 @@ public class Main
 		cc.abstractMethod(); // overiddn by the chiled class
 		cc.simpleChildMethod(); // from the child class
 		cc.simpleNonAbstractMethod(); // from parent abstract class
+
+		// Java Interface
+		PetFromAnimalInterface pfai = new PetFromAnimalInterface();
+		pfai.makeSound();
+		pfai.moveFast();
 	}
 }
