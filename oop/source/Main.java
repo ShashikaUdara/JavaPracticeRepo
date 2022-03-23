@@ -138,5 +138,10 @@ public class Main
 		PetFromAnimalInterface pfai = new PetFromAnimalInterface();
 		pfai.makeSound();
 		pfai.moveFast();
+
+		// Java Enums
+		// Enum inside a Class
+		JavaEnumClass jec = new JavaEnumClass();
+		jec.enumExample();
 	}
 }
