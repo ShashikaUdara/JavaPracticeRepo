@@ -31,5 +31,10 @@ public class JavaEnumClass
 				System.out.println("case Bottom");
 				break;
 		}
+
+		for(Level val : Level.values())
+		{
+			System.out.println("Enum val: " + val);
+		}
 	}
 }

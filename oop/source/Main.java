@@ -142,6 +142,8 @@ public class Main
 		// Java Enums
 		// Enum inside a Class
 		JavaEnumClass jec = new JavaEnumClass();
+
+		// Enum in a Switch Statement
 		jec.enumExample();
 	}
 }
