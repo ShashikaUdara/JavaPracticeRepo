@@ -1,4 +1,4 @@
-import java.time.LocalDate;
+import java.time.*;
 
 public class Main
 {
@@ -151,5 +151,11 @@ public class Main
 		// Display Current Date
 		LocalDate today = LocalDate.now();
 		System.out.println("Today is: " + today);
+
+		// Display Current Time
+		System.out.println("Time is: " + LocalTime.now());
+
+		// Display Current Date and Time
+		System.out.println("The Date and Time is: " + LocalDateTime.now());
 	}
 }
