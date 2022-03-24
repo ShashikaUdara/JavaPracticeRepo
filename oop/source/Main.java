@@ -157,5 +157,9 @@ public class Main
 
 		// Display Current Date and Time
 		System.out.println("The Date and Time is: " + LocalDateTime.now());
+
+		// ArrayList example
+		ArrayListExampleClass alc = new ArrayListExampleClass();
+		alc.stringArrayListExample();
 	}
 }
