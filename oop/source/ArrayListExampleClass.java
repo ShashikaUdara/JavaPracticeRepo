@@ -20,8 +20,8 @@ public class ArrayListExampleClass
 		ArrayList<String> itemList = new ArrayList<String>();
 		for(int i=0; i<count; i++)
 		{
-			System.out.print("Enter item #" + i+1);
-			sItem = "List item #" + i+1 + " - ";
+			System.out.print("Enter item #" + (i+1));
+			sItem = "List item #" + (i+1) + " - ";
 			sItem += strObj.nextLine();
 			itemList.add(sItem);
 		}
