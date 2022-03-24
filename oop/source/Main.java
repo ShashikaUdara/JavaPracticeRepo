@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Main
 {
 	public static void main(String[] args)
@@ -145,5 +147,9 @@ public class Main
 
 		// Enum in a Switch Statement
 		jec.enumExample();
+
+		// Display Current Date
+		LocalDate today = LocalDate.now();
+		System.out.println("Today is: " + today);
 	}
 }
