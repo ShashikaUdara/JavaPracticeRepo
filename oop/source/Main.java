@@ -165,5 +165,9 @@ public class Main
 		// Java LinkedList
 		LinkedListExample ll = new LinkedListExample();
 		ll.linkedListMethod();
+
+		// Java HashMap
+		HashMapExample hme = new HashMapExample();
+		hme.basicHashMap();
 	}
 }
