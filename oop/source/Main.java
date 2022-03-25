@@ -169,5 +169,9 @@ public class Main
 		// Java HashMap
 		HashMapExample hme = new HashMapExample();
 		hme.basicHashMap();
+
+		// Java HashSet
+		HashSetExample hse = new HashSetExample();
+		hse.hashSetDemo();
 	}
 }
