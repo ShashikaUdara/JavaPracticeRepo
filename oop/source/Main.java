@@ -161,5 +161,9 @@ public class Main
 		// ArrayList example
 		ArrayListExampleClass alc = new ArrayListExampleClass();
 		alc.stringArrayListExample();
+
+		// Java LinkedList
+		LinkedListExample ll = new LinkedListExample();
+		ll.linkedListMethod();
 	}
 }
