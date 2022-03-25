@@ -50,6 +50,10 @@ public class HashSetExample
 			System.out.println("hsMonths - " + i);
 		}
 
+		// checkign if contains the item
+		System.out.println("hsMonths.contains(December)- " + hsMonths.contains("December"));
+		System.out.println("hsMonths.contains(January)- " + hsMonths.contains("January"));
+
 		System.out.println("++++++++++++++++++++++++ clearing ++++++++++++++++++++++++++++");
 		System.out.println("hsMonths.size() before clear- " + hsMonths.size());
 		hsMonths.clear();
