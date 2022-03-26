@@ -173,5 +173,8 @@ public class Main
 		// Java HashSet
 		HashSetExample hse = new HashSetExample();
 		hse.hashSetDemo();
+
+		// Java Iterator
+		hse.iteratorOnHashSet();
 	}
 }

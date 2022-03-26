@@ -1,4 +1,5 @@
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class HashSetExample
 {
@@ -58,5 +59,31 @@ public class HashSetExample
 		System.out.println("hsMonths.size() before clear- " + hsMonths.size());
 		hsMonths.clear();
 		System.out.println("hsMonths.size() after clear- " + hsMonths.size());
+	}
+
+	public void iteratorOnHashSet()
+	{
+		HashSet<String> newSet = new HashSet<String>();
+		newSet.add("January");
+		newSet.add("February");
+		newSet.add("March");
+		newSet.add("April");
+		newSet.add("May");
+		newSet.add("June");
+		newSet.add("July");
+		newSet.add("August");
+		newSet.add("September");
+		newSet.add("October");
+		newSet.add("November");
+		newSet.add("December");
+
+		// creating the iterator
+		Iterator<String> itNewSet = newSet.iterator();
+
+		System.out.println("Item 1: " + itNewSet.next());
+		System.out.println("Item 2: " + itNewSet.next());
+		System.out.println("Item 3: " + itNewSet.next());
+		System.out.println("Item 4: " + itNewSet.next());
+		System.out.println("Item 5: " + itNewSet.next());
 	}
 }
