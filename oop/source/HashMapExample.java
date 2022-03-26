@@ -1,6 +1,8 @@
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.Map.Entry;
+import java.util.Map;
 
 public class HashMapExample
 {
@@ -86,6 +88,43 @@ public class HashMapExample
 		while(itHashMap.hasNext())
 		{
 			System.out.println(itHashMap.next());
+		}
+	}
+
+	public void iteratorOnHashMapSecondMethod()
+	{
+		System.out.println("++++++++++++++++ public void iteratorOnHashMapSecondMethod()");
+		HashMap<String, String> newMap = new HashMap<String, String>();
+
+		// putting values
+		newMap.put("Jan", "January");
+		newMap.put("Feb", "February");
+		newMap.put("Mar", "March");
+		newMap.put("Apr", "April");
+		newMap.put("May", "May");
+		newMap.put("Jun", "June");
+		newMap.put("Jul", "July");
+		newMap.put("Aug", "August");
+		newMap.put("Sep", "September");
+		newMap.put("Oct", "October");
+		newMap.put("Nov", "November");
+		newMap.put("Dec", "December");
+
+
+		// getting set of key-value pairs
+		Set newSet = newMap.entrySet();
+		System.out.println(newSet);
+
+		// creating the iterator obbject
+		Iterator<Entry<String, String>> itHashMap = newMap.entrySet().iterator();
+
+		while(itHashMap.hasNext())
+		{
+			System.out.println(itHashMap.next());
+
+			// decoding back to the map
+			Map.Entry<String, String> iterMap = (Map.Entry<String, String>)itHashMap.next();
+			System.out.println("Key- " + iterMap.getKey() + "| Value- " + iterMap.getValue());
 		}
 	}
 }

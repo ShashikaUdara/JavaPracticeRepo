@@ -181,5 +181,6 @@ public class Main
 
 		// Iterator over HashMap
 		hme.iteratorOnHashMap();
+		hme.iteratorOnHashMapSecondMethod();
 	}
 }
