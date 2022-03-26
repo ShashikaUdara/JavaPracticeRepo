@@ -1,5 +1,6 @@
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Set;
 
 public class HashSetExample
 {
@@ -63,6 +64,7 @@ public class HashSetExample
 
 	public void iteratorOnHashSet()
 	{
+		System.out.println("++++++++++++++++ public void iteratorOnHashSet()");
 		HashSet<String> newSet = new HashSet<String>();
 		newSet.add("January");
 		newSet.add("February");
@@ -85,5 +87,33 @@ public class HashSetExample
 		System.out.println("Item 3: " + itNewSet.next());
 		System.out.println("Item 4: " + itNewSet.next());
 		System.out.println("Item 5: " + itNewSet.next());
+	}
+
+	public void iteratorOnHashSet2ndMethod()
+	{
+		System.out.println("++++++++++++++++ public void iteratorOnHashSet2ndMethod()");
+		HashSet<String> newSet = new HashSet<String>();
+		newSet.add("January");
+		newSet.add("February");
+		newSet.add("March");
+		newSet.add("April");
+		newSet.add("May");
+		newSet.add("June");
+		newSet.add("July");
+		newSet.add("August");
+		newSet.add("September");
+		newSet.add("October");
+		newSet.add("November");
+		newSet.add("December");
+
+		// creating the Set value set
+		// Set iterSet = newSet.entrySet();
+		// creating the iterator
+		Iterator itNewSet = newSet.iterator();
+
+		while(itNewSet.hasNext())
+		{
+			System.out.println(itNewSet.next());
+		}
 	}
 }

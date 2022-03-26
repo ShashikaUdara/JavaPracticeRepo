@@ -175,6 +175,11 @@ public class Main
 		hse.hashSetDemo();
 
 		// Java Iterator
+		// Iterator over HashSet
 		hse.iteratorOnHashSet();
+		hse.iteratorOnHashSet2ndMethod();
+
+		// Iterator over HashMap
+		hme.iteratorOnHashMap();
 	}
 }

@@ -1,4 +1,6 @@
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Set;
 
 public class HashMapExample
 {
@@ -52,5 +54,38 @@ public class HashMapExample
 		System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++");
 		hmMonths.clear();
 		System.out.println("hmMonths.size() after clearing - " + hmMonths.size());
+	}
+
+	public void iteratorOnHashMap()
+	{
+		System.out.println("++++++++++++++++ public void iteratorOnHashMap()");
+		HashMap<String, String> newMap = new HashMap<String, String>();
+
+		// putting values
+		newMap.put("Jan", "January");
+		newMap.put("Feb", "February");
+		newMap.put("Mar", "March");
+		newMap.put("Apr", "April");
+		newMap.put("May", "May");
+		newMap.put("Jun", "June");
+		newMap.put("Jul", "July");
+		newMap.put("Aug", "August");
+		newMap.put("Sep", "September");
+		newMap.put("Oct", "October");
+		newMap.put("Nov", "November");
+		newMap.put("Dec", "December");
+
+
+		// getting set of key-value pairs
+		Set newSet = newMap.entrySet();
+		System.out.println(newSet);
+
+		// creating the iterator obbject
+		Iterator itHashMap = newSet.iterator();
+
+		while(itHashMap.hasNext())
+		{
+			System.out.println(itHashMap.next());
+		}
 	}
 }
