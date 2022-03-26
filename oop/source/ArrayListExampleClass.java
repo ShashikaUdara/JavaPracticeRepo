@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Iterator;
 
 public class ArrayListExampleClass
 {
@@ -30,6 +31,46 @@ public class ArrayListExampleClass
 		for(int i=0; i<count; i++)
 		{
 			System.out.println(itemList.get(i));
+		}
+	}
+
+	public void iteratorOnArrayList()
+	{
+		System.out.println("++++++++++++++++++++++++++++ public void iteratorOnArrayList()");
+		String sMonth = "";
+		ArrayList<String> listItems = new ArrayList<String>();
+
+		listItems.add("January");
+		listItems.add("February");
+		listItems.add("March");
+		listItems.add("April");
+		listItems.add("May");
+		listItems.add("June");
+		listItems.add("July");
+		listItems.add("August");
+		listItems.add("September");
+		listItems.add("October");
+		listItems.add("November");
+		listItems.add("December");
+
+		// creating the iterator
+		Iterator<String> itList = listItems.iterator();
+
+		while(itList.hasNext())
+		{
+			sMonth = itList.next();
+			System.out.println("sMonth- " + sMonth);
+			if(sMonth.equals("June") || sMonth.equals("October"))
+			{
+				itList.remove();
+			}
+		}
+
+		Iterator<String> itList2 = listItems.iterator();
+
+		while(itList2.hasNext())
+		{
+			System.out.println("Updated ArrayList - " + itList2.next());
 		}
 	}
 
