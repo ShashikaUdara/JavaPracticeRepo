@@ -185,5 +185,8 @@ public class Main
 
 		// Iterator over ArrayList
 		alc.iteratorOnArrayList();
+
+		// Itorator over LinkedList
+		ll.treratorOnLinkedLists();
 	}
 }

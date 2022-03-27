@@ -1,4 +1,5 @@
 import java.util.LinkedList;
+import java.util.Iterator;
 
 public class LinkedListExample
 {
@@ -56,5 +57,27 @@ public class LinkedListExample
 		System.out.println("***************************");
 		System.out.println("Get first - " + animals.getFirst());
 		System.out.println("Get last - " + animals.getLast());
+	}
+
+	public void treratorOnLinkedLists()
+	{
+		LinkedList<String> newList = new LinkedList<String>();
+		
+		newList.add("ant");
+		newList.add("bear");
+		newList.add("bee");
+		newList.add("bird");
+		newList.add("butterfly");
+		newList.add("camel");
+		newList.add("cat");
+		newList.add("caterpillar");
+
+		// creating the iterator
+		Iterator itList = newList.iterator();
+
+		while(itList.hasNext())
+		{
+			System.out.println(itList.next());
+		}
 	}
 }
