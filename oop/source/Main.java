@@ -188,5 +188,25 @@ public class Main
 
 		// Itorator over LinkedList
 		ll.treratorOnLinkedLists();
+
+		// Java Wrapper Classes
+		// Wrapper classes provide a way to use primitive data types
+		// Creating Wrapper Objects
+		// To create a wrapper object, use the wrapper class instead of the primitive type. To get the value, you can just print the object
+		Integer iA = 5;
+		Double dB = 5235.2356;
+		Character cC = 'S';
+
+		System.out.println("iA- " + iA);
+		System.out.println("dB- " + dB);
+		System.out.println("cC- " + cC);
+
+		System.out.println("iA.intValue()- " + iA.intValue());
+		System.out.println("dB.doubleValue()- " + dB.doubleValue());
+		System.out.println("cC.charValue()- " + cC.charValue());
+
+		String dVal = dB.toString();
+		System.out.println("dVal- " + dVal + " and length- " + dVal.length());
+
 	}
 }
