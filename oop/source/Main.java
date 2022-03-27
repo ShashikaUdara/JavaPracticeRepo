@@ -208,5 +208,9 @@ public class Main
 		String dVal = dB.toString();
 		System.out.println("dVal- " + dVal + " and length- " + dVal.length());
 
+		// Java Exceptions - Try...Catch
+		ExceptionHandling ehc = new ExceptionHandling();
+		ehc.basicExceptionHandled();
+		ehc.throwingException();
 	}
 }
