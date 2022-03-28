@@ -212,5 +212,9 @@ public class Main
 		ExceptionHandling ehc = new ExceptionHandling();
 		ehc.basicExceptionHandled();
 		ehc.throwingException();
+
+		// Java Regular Expressions
+		RegularExpressions newRegex = new RegularExpressions();
+		newRegex.basicRegEx();
 	}
 }
