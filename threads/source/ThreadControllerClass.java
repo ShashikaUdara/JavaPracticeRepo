@@ -21,6 +21,18 @@ public class ThreadControllerClass
 		*/
 		JavaThreadsClass tc = new JavaThreadsClass();
 		tc.start();
+		while(tc.isAlive())
+		{
+			System.out.println("T-Waiting...");
+			try
+			{
+				Thread.sleep(1000);
+			}
+			catch(InterruptedException e)
+			{
+				System.out.println("e - " + e);
+			}
+		}
 	}
 
 	public void controlThreadByRunnable()
@@ -36,5 +48,19 @@ public class ThreadControllerClass
 		JavaRunnableInterface ri = new JavaRunnableInterface();
 		Thread thread = new Thread(ri);
 		thread.start();
+		while(thread.isAlive())
+		{
+			System.out.println("R-Waiting...");
+			try
+			{
+				Thread.sleep(1000);
+			}
+			catch(InterruptedException e)
+			{
+				System.out.println("e - " + e);
+			}
+		}
 	}
+
+	// Using Timer in Threads
 }

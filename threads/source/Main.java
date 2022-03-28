@@ -15,5 +15,7 @@ public class Main
 		// using seperate thread controller class to keep main clean
 		ThreadControllerClass tcl = new ThreadControllerClass();
 		// tcl.controlThreadByThreads();
+
+		// Using Timer in Threads
 	}
 }
