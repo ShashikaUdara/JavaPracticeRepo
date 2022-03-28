@@ -15,8 +15,12 @@ public class ThreadControllerClass
 		System.out.println("public void controlThreadByThreads()");
 
 		// calling threaded child class
+		/* 
+			If the class extends the Thread class, the thread can be run by 
+		   creating an instance of the class and call its start() method
+		*/
 		JavaThreadsClass tc = new JavaThreadsClass();
-		tc.run();
+		tc.start();
 	}
 
 	public void controlThreadByRunnable()
@@ -24,7 +28,13 @@ public class ThreadControllerClass
 		System.out.println("public void controlThreadByRunnable()");
 
 		// calling class implementes by the runnable interface
+		/*
+			If the class implements the Runnable interface, the thread can be run by passing an 
+			instance of the class to a Thread object's constructor and then calling the 
+			thread's start() method
+		*/
 		JavaRunnableInterface ri = new JavaRunnableInterface();
-		ri.run();
+		Thread thread = new Thread(ri);
+		thread.start();
 	}
 }
