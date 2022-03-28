@@ -160,7 +160,7 @@ public class Main
 
 		// ArrayList example
 		ArrayListExampleClass alc = new ArrayListExampleClass();
-		alc.stringArrayListExample();
+		// alc.stringArrayListExample();
 
 		// Java LinkedList
 		LinkedListExample ll = new LinkedListExample();
@@ -219,5 +219,8 @@ public class Main
 
 		// patterns 
 		newRegex.regularExpressionPatterns();
+
+		// Metacharacters
+		newRegex.metacharactersExample();
 	}
 }
