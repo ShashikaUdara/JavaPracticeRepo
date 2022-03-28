@@ -2,6 +2,10 @@
 
 public class JavaRunnableInterface implements Runnable
 {
+	public JavaRunnableInterface()
+	{
+		System.out.println("Constructor - JavaRunnableInterface");
+	}
 	public void run()
 	{
 		System.out.println("Overrided run method in Runnable Interface");
