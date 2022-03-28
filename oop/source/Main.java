@@ -216,5 +216,8 @@ public class Main
 		// Java Regular Expressions
 		RegularExpressions newRegex = new RegularExpressions();
 		newRegex.basicRegEx();
+
+		// patterns 
+		newRegex.regularExpressionPatterns();
 	}
 }
