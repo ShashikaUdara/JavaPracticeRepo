@@ -1,13 +1,15 @@
 // this is the thread controller class
+import java.util.Timer;
+import java.util.TimerTask;
 
-public class ThreadControllerClass
+public class ThreadControllerClass extends TimerTask
 {
 	public ThreadControllerClass()
 	{
 		System.out.println("Constructor - ThreadControllerClass");
-		controlThreadByThreads();
-		controlThreadByRunnable();
-		System.out.println("Creted the ThreadControllerClass object");
+		// scheduleTasksThreads();
+		// scheduleTasksRunnable();
+		// System.out.println("Creted the ThreadControllerClass object");
 	}
 
 	public void controlThreadByThreads()
@@ -63,4 +65,9 @@ public class ThreadControllerClass
 	}
 
 	// Using Timer in Threads
+	public void run()
+	{
+		controlThreadByThreads();
+		controlThreadByRunnable();
+	}
 }

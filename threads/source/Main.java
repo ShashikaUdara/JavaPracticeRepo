@@ -1,3 +1,6 @@
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class Main 
 {
 	public static void main(String[] args)
@@ -17,5 +20,9 @@ public class Main
 		// tcl.controlThreadByThreads();
 
 		// Using Timer in Threads
+		Timer timer = new Timer();
+		TimerTask task = new ThreadControllerClass(); 
+
+		timer.schedule(task, 2000, 5000);
 	}
 }
