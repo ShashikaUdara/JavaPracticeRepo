@@ -19,5 +19,14 @@ public class Main
 		{
 			System.out.print(sortedArr[i] + " - ");
 		}
+
+		// quickSort
+		sortedArr = sort.quickSort(arrTempArrayInput, 0, arrTempArrayInput.length);
+		System.out.println("");
+
+		for(int i=0; i<sortedArr.length; i++)
+		{
+			System.out.print(sortedArr[i] + " - ");
+		}
 	}
 }
