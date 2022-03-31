@@ -34,7 +34,7 @@ public class SortClass
 		return arrInput;
 	}
 
-	public int[] quickSort(int[] arr, int low, int high)
+	public void quickSort(int[] arr, int low, int high)
 	{
 		if(low < high)
 		{
@@ -46,19 +46,26 @@ public class SortClass
 
 	public int partition(int[] arr, int low, int high)
 	{
-		int iPivot = arr[high];
+		int iPivot = arr[high-1];
 		int i = low - 1;
+		int iTemp = 0;
 
-		for(int j=low; j<high-1; j++)
+		for(int j=low; j<high-2; j++)
 		{
 			if(arr[j] < iPivot)
 			{
 				i++;
-				swap(&arr[i], &arr[j]);
+				// swap(&arr[i], &arr[j]);
+				iTemp = arr[i];
+				arr[i] = arr[j];
+				arr[j] = iTemp;
 			}
 		}
 		i++;
-		swap(&arr[i], &arr[j]);
+		// swap(&arr[i], &arr[j]);
+		iTemp = arr[i];
+		arr[i] = arr[high-1];
+		arr[high-1] = iTemp;
 
 		return i;
 	}

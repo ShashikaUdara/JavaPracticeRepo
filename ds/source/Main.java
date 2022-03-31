@@ -21,12 +21,19 @@ public class Main
 		}
 
 		// quickSort
-		sortedArr = sort.quickSort(arrTempArrayInput, 0, arrTempArrayInput.length);
-		System.out.println("");
-
-		for(int i=0; i<sortedArr.length; i++)
+		int[] arrQuick = {5,8,45,56,89,61,5,85,96,72,652};
+		System.out.println("\n\nBefore");
+		for(int i=0; i<arrQuick.length; i++)
 		{
-			System.out.print(sortedArr[i] + " - ");
+			System.out.print(arrQuick[i] + " - ");
+		}
+		// quickSorting
+		sort.quickSort(arrQuick, 0, arrQuick.length);
+
+		System.out.println("\n\nAfter");
+		for(int i=0; i<arrQuick.length-1; i++)
+		{
+			System.out.print(arrQuick[i] + " - ");
 		}
 	}
 }
