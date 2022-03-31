@@ -21,7 +21,7 @@ public class Main
 		}
 
 		// quickSort
-		int[] arrQuick = {5,8,45,56,89,61,5,85,96,72,652};
+		int[] arrQuick = {5,8,45,56,89,61,45,56,78,12,65,99,45,28,99,22,55,66,333,45,878,125,63,458,56,25};
 		System.out.println("\n\nBefore");
 		for(int i=0; i<arrQuick.length; i++)
 		{
@@ -31,7 +31,7 @@ public class Main
 		sort.quickSort(arrQuick, 0, arrQuick.length);
 
 		System.out.println("\n\nAfter");
-		for(int i=0; i<arrQuick.length-1; i++)
+		for(int i=0; i<arrQuick.length; i++)
 		{
 			System.out.print(arrQuick[i] + " - ");
 		}

@@ -50,9 +50,9 @@ public class SortClass
 		int i = low - 1;
 		int iTemp = 0;
 
-		for(int j=low; j<high-2; j++)
+		for(int j=low; j<high-1; j++)
 		{
-			if(arr[j] < iPivot)
+			if(arr[j] <= iPivot)
 			{
 				i++;
 				// swap(&arr[i], &arr[j]);
