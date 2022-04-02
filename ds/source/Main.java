@@ -38,6 +38,10 @@ public class Main
 
 		System.out.println("\n\nBinary Search Example");
 		SearchClass sc = new SearchClass();
-		System.out.println("The position of number 333 is " + sc.binarySearch(arrQuick, 333));
+		System.out.println("WhileLoop - The position of number 333 is " + sc.binarySearch(arrQuick, 333));
+
+		int leftIndex = 0;
+		int rightIndex = arrQuick.length;
+		System.out.println("Recursive - The position of number 333 is " + sc.recursiveBinarySearch(arrQuick, 333, leftIndex, rightIndex));
 	}
 }
