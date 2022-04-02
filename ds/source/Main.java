@@ -36,7 +36,8 @@ public class Main
 			System.out.print(arrQuick[i] + " - ");
 		}
 
+		System.out.println("\n\nBinary Search Example");
 		SearchClass sc = new SearchClass();
-		sc.binarySearch();
+		System.out.println("The position of number 333 is " + sc.binarySearch(arrQuick, 333));
 	}
 }

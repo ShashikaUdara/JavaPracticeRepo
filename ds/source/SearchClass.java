@@ -14,7 +14,7 @@ public class SearchClass
 
 		while(leftIndex <= rightIndex)
 		{
-			midIndex = (inputArr.length)/2;
+			midIndex = (rightIndex + leftIndex)/2;
 			midNumber = inputArr[midIndex];
 
 			if(midNumber == searchVal)
