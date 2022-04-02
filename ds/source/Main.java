@@ -35,5 +35,8 @@ public class Main
 		{
 			System.out.print(arrQuick[i] + " - ");
 		}
+
+		SearchClass sc = new SearchClass();
+		sc.binarySearch();
 	}
 }

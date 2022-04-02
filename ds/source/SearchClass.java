@@ -5,7 +5,7 @@ public class SearchClass
 		System.out.println("Constructor SearchClass");
 	}
 
-	public void binarySearch(int[] inputArr, int searchVal)
+	public int binarySearch(int[] inputArr, int searchVal)
 	{
 		int midIndex = 0;
 		int midNumber = 0;
@@ -21,6 +21,17 @@ public class SearchClass
 			{
 				return midIndex;
 			}
+
+			if(midNumber < searchVal)
+			{
+				leftIndex = midIndex+1;
+			}
+			else
+			{
+				rightIndex = midIndex-1;
+			}
 		}
+
+		return -1;
 	}
 }
