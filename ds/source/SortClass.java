@@ -9,14 +9,7 @@ public class SortClass
 
 	public int[] bubbleSort(int[] arrInput)
 	{
-		// ArrayList<Integer> newAL = new ArrayList<Integer>();
 		int temp = 0;
-
-		// for(int i=0; i<arrInput.length; i++)
-		// {
-		// 	System.out.println(arrInput[i]);
-		// 	newAL.add(arrInput[i]);
-		// }
 
 		for(int x=0; x<arrInput.length-2; x++)
 		{
