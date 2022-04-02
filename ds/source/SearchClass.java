@@ -15,6 +15,10 @@ public class SearchClass
 		while(leftIndex <= rightIndex)
 		{
 			midIndex = (rightIndex + leftIndex)/2;
+			if(midIndex >= inputArr.length || midIndex < 0)
+			{
+				return -1;
+			}
 			midNumber = inputArr[midIndex];
 
 			if(midNumber == searchVal)
@@ -38,6 +42,11 @@ public class SearchClass
 	public int recursiveBinarySearch(int[] inputArr, int searchVal, int leftIndex, int rightIndex)
 	{
 		int midIndex = (rightIndex + leftIndex)/2;
+		if(midIndex >= inputArr.length || midIndex < 0)
+		{
+			return -1;
+		}
+
 		int midNumber = inputArr[midIndex];
 
 		if(leftIndex > rightIndex)
